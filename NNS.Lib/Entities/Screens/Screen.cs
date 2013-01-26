@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace NNS.Lib.Entities.Screens
 {
-	public abstract class Screen
+	public abstract class Screen : Common.UniqueID
 	{
 		public bool Visible {
 			get;
@@ -13,7 +13,9 @@ namespace NNS.Lib.Entities.Screens
 		}
 
 		public Screen ()
-		{
+		 : base()
+        {
+
 			this.Visible = true;
 		}
 

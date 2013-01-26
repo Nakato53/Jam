@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using NNS.Lib.Entities.Common;
 using NNS.Lib.Managers;
+using NNS.Lib.Utils;
 
 namespace NNS.Lib.Main
 {
@@ -18,11 +19,14 @@ namespace NNS.Lib.Main
         protected ScreensManager _ScreensManager;
 
         protected Config _config;
+        protected Log _log;
 
         public MyGame(Game game, GraphicsDeviceManager graph)
         {
             _game = game;
             _graphics = graph;
+
+            this._log = new Log();
 
             this._config = new Config();
 
@@ -36,6 +40,8 @@ namespace NNS.Lib.Main
         public void Initialize()
         {
             this._ScreensManager = new ScreensManager();
+            this._ScreensManager.addScreen("gameScreen", new Entities.Screens.GameScreen());
+
         }
 
 

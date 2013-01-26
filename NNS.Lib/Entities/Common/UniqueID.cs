@@ -10,7 +10,7 @@ namespace NNS.Lib.Entities.Common
         protected String _ID;
         public UniqueID()
         {
-            this._ID = uniqueCode();
+            this._ID = this.GetType().Name + "_" + uniqueCode();
         }
 
         public String getID()

@@ -31,14 +31,19 @@ namespace NNS.Lib.Managers
 		public void addScreen (String key, Screen screen)
 		{
 			this._screens.Add(key,screen);
-			if(this._currentScreen == null)
-				this._currentScreen =  screen;
+            if (this._currentScreen == null)
+            {
+                SwitchScreen(key);
+            }
 		}
 
 		public void SwitchScreen(String screen)
 		{
-			if(this._screens.ContainsKey(screen))
-				this._currentScreen = this._screens[screen];
+            if (this._screens.ContainsKey(screen))
+            {
+                Utils.Events.fire("ScreenManager::changeScreen", new object[]{ "test",new Vector2(10,10) } );
+                this._currentScreen = this._screens[screen];
+            }
 		}
 
 		public void Update (GameTime gameTime)
