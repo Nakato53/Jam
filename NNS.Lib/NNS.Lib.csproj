@@ -61,12 +61,19 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main\WinGame.cs" />
+    <Compile Include="Entities\Common\Config.cs" />
+    <Compile Include="Entities\Sprites\AnimatedSprite.cs" />
+    <Compile Include="Entities\Sprites\Animation.cs" />
+    <Compile Include="Entities\Screens\Screen.cs" />
+    <Compile Include="Entities\Sprites\Sprite.cs" />
+    <Compile Include="Entities\Common\UniqueID.cs" />
+    <Compile Include="Main\MyGame.cs" />
+    <Compile Include="Managers\InputManager.cs" />
+    <Compile Include="Managers\ScreensManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Managers\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

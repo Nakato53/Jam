@@ -4,3 +4,9 @@ c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NNS.Lib\obj\
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NNS.Lib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NNS.Lib\obj\x86\Debug\NNS.Lib.dll
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NNS.Lib\obj\x86\Debug\NNS.Lib.pdb
+D:\Projets\C#\XNA\Jam\NNS.Lib\bin\x86\Debug\NNS.Lib.dll
+D:\Projets\C#\XNA\Jam\NNS.Lib\bin\x86\Debug\NNS.Lib.pdb
+D:\Projets\C#\XNA\Jam\NNS.Lib\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projets\C#\XNA\Jam\NNS.Lib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Projets\C#\XNA\Jam\NNS.Lib\obj\x86\Debug\NNS.Lib.dll
+D:\Projets\C#\XNA\Jam\NNS.Lib\obj\x86\Debug\NNS.Lib.pdb

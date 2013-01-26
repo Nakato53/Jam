@@ -1,1 +1,2 @@
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooterContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooterContent\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -6,3 +6,11 @@ c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShoote
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooter\bin\x86\Debug\NNS.Lib.pdb
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.exe
 c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.pdb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\NoNameShooter.exe
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\NoNameShooter.pdb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\NNS.Lib.dll
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\NNS.Lib.pdb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.exe
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.pdb

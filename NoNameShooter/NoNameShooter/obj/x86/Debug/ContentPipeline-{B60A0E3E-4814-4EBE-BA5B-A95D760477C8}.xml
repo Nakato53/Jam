@@ -8,10 +8,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooterContent\</RootDirectory>
-      <LoggerRootDirectory>c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooter\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooter\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\nakato\documents\visual studio 2010\Projects\NoNameShooter\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooterContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
