@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoNameShooter", "NoNameShooter\NoNameShooter\NoNameShooter.csproj", "{2621CDBE-5C19-4501-99DE-6D888DECCDB8}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "NoNameShooterContent", "NoNameShooter\NoNameShooterContent\NoNameShooterContent.contentproj", "{B60A0E3E-4814-4EBE-BA5B-A95D760477C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NNS.Lib", "NNS.Lib\NNS.Lib.csproj", "{4E9D9C74-C26A-4075-8729-E539ADD0E20E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2621CDBE-5C19-4501-99DE-6D888DECCDB8}.Debug|x86.ActiveCfg = Debug|x86
+		{2621CDBE-5C19-4501-99DE-6D888DECCDB8}.Debug|x86.Build.0 = Debug|x86
+		{2621CDBE-5C19-4501-99DE-6D888DECCDB8}.Release|x86.ActiveCfg = Release|x86
+		{2621CDBE-5C19-4501-99DE-6D888DECCDB8}.Release|x86.Build.0 = Release|x86
+		{B60A0E3E-4814-4EBE-BA5B-A95D760477C8}.Debug|x86.ActiveCfg = Debug|x86
+		{B60A0E3E-4814-4EBE-BA5B-A95D760477C8}.Release|x86.ActiveCfg = Release|x86
+		{4E9D9C74-C26A-4075-8729-E539ADD0E20E}.Debug|x86.ActiveCfg = Debug|x86
+		{4E9D9C74-C26A-4075-8729-E539ADD0E20E}.Debug|x86.Build.0 = Debug|x86
+		{4E9D9C74-C26A-4075-8729-E539ADD0E20E}.Release|x86.ActiveCfg = Release|x86
+		{4E9D9C74-C26A-4075-8729-E539ADD0E20E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
