@@ -71,6 +71,7 @@
     <Compile Include="Main\MyGame.cs" />
     <Compile Include="Managers\InputManager.cs" />
     <Compile Include="Managers\ScreensManager.cs" />
+    <Compile Include="Managers\Texture2DManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Events.cs" />
     <Compile Include="Utils\Log.cs" />

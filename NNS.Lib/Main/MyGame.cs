@@ -20,6 +20,7 @@ namespace NNS.Lib.Main
 
         protected Config _config;
         protected Log _log;
+        protected Texture2DManager _texturesManager;
 
         public MyGame(Game game, GraphicsDeviceManager graph)
         {
@@ -29,6 +30,7 @@ namespace NNS.Lib.Main
             this._log = new Log();
 
             this._config = new Config();
+            this._texturesManager = new Texture2DManager(_game.Content);
 
             _graphics.PreferredBackBufferHeight= _config.GAME_HEIGHT;
             _graphics.PreferredBackBufferWidth = _config.GAME_WIDTH;

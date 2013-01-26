@@ -14,3 +14,4 @@ D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\ResolveAssemblyR
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.exe
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.pdb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\fireball.xnb
