@@ -62,6 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Common\Config.cs" />
+    <Compile Include="Entities\Lights\Light.cs" />
+    <Compile Include="Managers\LightsManager.cs" />
+    <Compile Include="Entities\Lights\PointLight.cs" />
+    <Compile Include="Entities\Lights\SpotLight.cs" />
     <Compile Include="Entities\Screens\GameScreen.cs" />
     <Compile Include="Entities\Sprites\AnimatedSprite.cs" />
     <Compile Include="Entities\Sprites\Animation.cs" />

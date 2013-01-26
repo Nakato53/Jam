@@ -13,7 +13,7 @@ namespace NNS.Lib.Main
 {
     public class MyGame
     {
-        protected Game _game;
+        public static Game Game;
         protected GraphicsDeviceManager _graphics;
 
         protected ScreensManager _ScreensManager;
@@ -22,21 +22,23 @@ namespace NNS.Lib.Main
         protected Log _log;
         protected Texture2DManager _texturesManager;
 
+        public static GraphicsDevice GraphicDevice;
+
         public MyGame(Game game, GraphicsDeviceManager graph)
         {
-            _game = game;
+            Game = game;
             _graphics = graph;
 
+            Main.MyGame.GraphicDevice = Game.GraphicsDevice;
+
             this._log = new Log();
+            this._texturesManager = new Texture2DManager(Game.Content);
 
-            this._config = new Config();
-            this._texturesManager = new Texture2DManager(_game.Content);
-
-            _graphics.PreferredBackBufferHeight= _config.GAME_HEIGHT;
-            _graphics.PreferredBackBufferWidth = _config.GAME_WIDTH;
+            _graphics.PreferredBackBufferHeight= Config.GAME_HEIGHT;
+            _graphics.PreferredBackBufferWidth = Config.GAME_WIDTH;
             _graphics.ApplyChanges();
 
-            _game.Window.Title = _config.GAME_NAME;
+            Game.Window.Title = Config.GAME_NAME;
         }
 
         public void Initialize()
@@ -66,7 +68,7 @@ namespace NNS.Lib.Main
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-            _game.GraphicsDevice.Clear(Color.CornflowerBlue);
+            Game.GraphicsDevice.Clear(Color.CornflowerBlue);
 
             this._ScreensManager.Draw(spriteBatch, gameTime);
 

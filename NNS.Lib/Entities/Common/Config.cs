@@ -7,9 +7,9 @@ namespace NNS.Lib.Entities.Common
 {
     public class Config
     {
-        public string GAME_NAME = "MonJeu";
-        public int GAME_WIDTH = 800;
-        public int GAME_HEIGHT = 600;
-        public bool GAME_FULLSCREEN = false;
+        public static string GAME_NAME = "MonJeu";
+        public static int GAME_WIDTH = 800;
+        public static int GAME_HEIGHT = 600;
+        public static bool GAME_FULLSCREEN = false;
     }
 }

@@ -10,11 +10,47 @@
       <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\fireball.xnb</Output>
       <Time>2013-01-26T20:21:50.1699205+03:00</Time>
     </Item>
+    <Item>
+      <Source>Effects\DeferredCombined.fx</Source>
+      <Name>Effects\DeferredCombined</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Effects\DeferredCombined.xnb</Output>
+      <Time>2013-01-26T23:03:03.1811851+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\MultiTarget.fx</Source>
+      <Name>Effects\MultiTarget</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Effects\MultiTarget.xnb</Output>
+      <Time>2013-01-26T23:03:03.1821851+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Lighthouse.jpg</Source>
+      <Name>Textures\Lighthouse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\Lighthouse.xnb</Output>
+      <Time>2013-01-26T23:16:21.7938631+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Chrysanthemum.jpg</Source>
+      <Name>Textures\Chrysanthemum</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\Chrysanthemum.xnb</Output>
+      <Time>2013-01-26T23:21:22.736076+03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{B60A0E3E-4814-4EBE-BA5B-A95D760477C8}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>Reach</TargetProfile>
+      <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
       <RootDirectory>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooterContent\</RootDirectory>
