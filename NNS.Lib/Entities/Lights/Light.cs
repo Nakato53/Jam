@@ -15,7 +15,7 @@ namespace NNS.Lib.Entities.Lights
         Spot
     }
 
-    public abstract class Light
+    public abstract class Light : Common.UniqueID
     {
         protected float _initialPower;
 

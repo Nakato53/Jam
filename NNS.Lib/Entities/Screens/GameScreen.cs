@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using NNS.Lib.Managers;
 using NNS.Lib.Entities.Lights;
 using NNS.Lib.Entities.Common;
+using NNS.Lib.Utils;
 
 namespace NNS.Lib.Entities.Screens
 {
@@ -35,8 +36,9 @@ namespace NNS.Lib.Entities.Screens
                 LightDecay = 400,
                 Position = new Vector3(400, 0, 30),
                 SpotAngle =150,
+                SpotRotation = 2,
                 SpotDecayExponent = 40,
-                Direction = new Vector3(0.244402379f, 0.969673932f, 0)
+              //  Direction = new Vector3(0.244402379f, 0.969673932f, 0)
             });
         }
 
@@ -49,8 +51,24 @@ namespace NNS.Lib.Entities.Screens
             if(InputManager.isKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
             {
                 SpotLight light = (SpotLight)this._lights[0];
-                light.SpotAngle += 0.1f;
-                light.Direction = new Vector3((float)Math.Cos(light.SpotAngle), (float)Math.Sin(light.SpotAngle), 0);
+                light.SpotRotation += 0.1f;
+                Events.fire("LightManager::LightRoration", light.getID());
+            }
+
+            if (InputManager.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.R))
+            {
+                Random rnd = new Random();
+                _lights.Add(new PointLight()
+                {
+                    IsEnabled = true,
+                    Color = new Vector4(0f, (float)rnd.NextDouble(), (float)rnd.NextDouble(), 1.0f),
+                    Power = (float)rnd.Next(1, 10) * .1f,
+                    LightDecay = rnd.Next(100, 400),
+                    Position = new Vector3(
+                        rnd.Next(0, Config.GAME_WIDTH),
+                        rnd.Next(0, Config.GAME_HEIGHT),
+                        80)
+                });
             }
         }
 
