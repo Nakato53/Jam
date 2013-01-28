@@ -2,15 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Textures\fireball.png</Source>
-      <Name>Textures\fireball</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\fireball.xnb</Output>
-      <Time>2013-01-26T20:21:50.1699205+03:00</Time>
-    </Item>
-    <Item>
       <Source>Effects\DeferredCombined.fx</Source>
       <Name>Effects\DeferredCombined</Name>
       <Importer>EffectImporter</Importer>
@@ -26,25 +17,34 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Effects\MultiTarget.xnb</Output>
-      <Time>2013-01-26T23:03:03.1821851+03:00</Time>
+      <Time>2013-01-27T11:32:09.7763211+03:00</Time>
     </Item>
     <Item>
-      <Source>Textures\Lighthouse.jpg</Source>
-      <Name>Textures\Lighthouse</Name>
+      <Source>Textures\zombi.png</Source>
+      <Name>Textures\zombi</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\Lighthouse.xnb</Output>
-      <Time>2013-01-26T23:16:21.7938631+03:00</Time>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\zombi.xnb</Output>
+      <Time>2013-01-27T11:12:23.9824976+03:00</Time>
     </Item>
     <Item>
-      <Source>Textures\Chrysanthemum.jpg</Source>
-      <Name>Textures\Chrysanthemum</Name>
+      <Source>Textures\normal.png</Source>
+      <Name>Textures\normal</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\Chrysanthemum.xnb</Output>
-      <Time>2013-01-26T23:21:22.736076+03:00</Time>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\normal.xnb</Output>
+      <Time>2013-01-27T11:41:43.3521277+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\player.png</Source>
+      <Name>Textures\player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\player.xnb</Output>
+      <Time>2013-01-27T22:59:32.1312488+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

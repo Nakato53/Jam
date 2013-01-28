@@ -13,8 +13,8 @@ namespace NNS.Lib.Managers
 
         private RenderTarget2D _colorMapRenderTarget;
         private RenderTarget2D _shadowMapRenderTarget;
-
-        private Color _ambientLight = new Color(.01f, .01f, .01f, 1);
+        private RenderTarget2D _normalMapRenderTarget;
+        private Color _ambientLight = new Color(.3f, .3f, .3f, 1);
 
         private Effect _lightEffect;
         private Effect _lightCombinedEffect;
@@ -61,6 +61,12 @@ namespace NNS.Lib.Managers
 
         public void DrawLights(SpriteBatch spriteBatch, List<Light> lights)
         {
+            // Clear all render targets
+            Main.MyGame.GraphicDevice.SetRenderTarget(null);
+            Main.MyGame.GraphicDevice.SetRenderTarget(_normalMapRenderTarget);
+
+            DrawNormalMap(spriteBatch);
+
 
             Main.MyGame.GraphicDevice.SetRenderTarget(null);
 
@@ -70,6 +76,19 @@ namespace NNS.Lib.Managers
 
             DrawCombinedMaps(spriteBatch);
 
+        }
+
+        private void DrawNormalMap(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(
+                Texture2DManager.Instance.get("normal"),
+                new Rectangle(0, 0, Main.MyGame.GraphicDevice.Viewport.Width, Main.MyGame.GraphicDevice.Viewport.Height),
+             //   Vector2.Zero,
+                Color.White);
+
+            spriteBatch.End();
         }
 
         private void initializeLight()
@@ -89,6 +108,7 @@ namespace NNS.Lib.Managers
 
             _colorMapRenderTarget = new RenderTarget2D(Main.MyGame.GraphicDevice, width, height);
             _shadowMapRenderTarget = new RenderTarget2D(Main.MyGame.GraphicDevice, width, height, false, format, pp.DepthStencilFormat, pp.MultiSampleCount, RenderTargetUsage.DiscardContents);
+            _normalMapRenderTarget = new RenderTarget2D(Main.MyGame.GraphicDevice, width, height, false, format, pp.DepthStencilFormat, pp.MultiSampleCount, RenderTargetUsage.DiscardContents);
 
             _lightEffect = Main.MyGame.Game.Content.Load<Effect>("Effects/MultiTarget");
             _lightCombinedEffect = Main.MyGame.Game.Content.Load<Effect>("Effects/DeferredCombined");
@@ -131,7 +151,7 @@ namespace NNS.Lib.Managers
             _lightCombinedEffectParamAmbientColor.SetValue(_ambientLight.ToVector4());
             _lightCombinedEffectParamColorMap.SetValue(_colorMapRenderTarget);
             _lightCombinedEffectParamShadowMap.SetValue(_shadowMapRenderTarget);
-            _lightCombinedEffectParamNormalMap.SetValue(_colorMapRenderTarget);
+            _lightCombinedEffectParamNormalMap.SetValue(_normalMapRenderTarget);
             _lightCombinedEffect.CurrentTechnique.Passes[0].Apply();
 
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null, _lightCombinedEffect);
@@ -148,6 +168,7 @@ namespace NNS.Lib.Managers
 
             foreach (var light in lights)
             {
+
                 if (!light.IsEnabled) continue;
 
                 Main.MyGame.GraphicDevice.SetVertexBuffer(VertexBuffer);
@@ -174,7 +195,7 @@ namespace NNS.Lib.Managers
                 _lightEffectParameterScreenWidth.SetValue(Main.MyGame.GraphicDevice.Viewport.Width);
                 _lightEffectParameterScreenHeight.SetValue(Main.MyGame.GraphicDevice.Viewport.Height);
                 _lightEffect.Parameters["ambientColor"].SetValue(_ambientLight.ToVector4());
-                _lightEffectParameterNormapMap.SetValue(_colorMapRenderTarget);
+                _lightEffectParameterNormapMap.SetValue(_normalMapRenderTarget);
                 _lightEffect.Parameters["ColorMap"].SetValue(_colorMapRenderTarget);
                 _lightEffect.CurrentTechnique.Passes[0].Apply();
 

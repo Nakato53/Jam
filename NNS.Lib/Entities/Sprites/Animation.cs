@@ -44,6 +44,7 @@ namespace NNS.Lib.Entities.Sprites
 		{
 			this._currentFrame = 0;
 			this._timeElapsed = 0;
+            this._currentRectangle = new Rectangle(this._currentFrame * this._frameWidth, 0, this._frameWidth, this.Texture.Height);
 		}
 
 		public Rectangle getFrame ()

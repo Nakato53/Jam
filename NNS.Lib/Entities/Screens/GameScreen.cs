@@ -9,21 +9,20 @@ using NNS.Lib.Managers;
 using NNS.Lib.Entities.Lights;
 using NNS.Lib.Entities.Common;
 using NNS.Lib.Utils;
+using NNS.Lib.Entities.GameObjects;
 
 namespace NNS.Lib.Entities.Screens
 {
     public class GameScreen : Screen
     {
-        Texture2D _text;
-
+        Player _player;
         private LightsManager _lightManager;
         private List<Light> _lights;
         private RenderTarget2D _colorMapRenderTarget;
 
         public GameScreen()
         {
-            this._text = Texture2DManager.Instance.get("Chrysanthemum");
-
+            _player = new Player(new Vector2(200, 200), Color.White);
             this._lightManager = new LightsManager();
             this._lights = new List<Light>();
             _colorMapRenderTarget = new RenderTarget2D(Main.MyGame.GraphicDevice, Config.GAME_WIDTH, Config.GAME_HEIGHT);
@@ -46,13 +45,14 @@ namespace NNS.Lib.Entities.Screens
         
         public override void Update(GameTime gameTime)
         {
+
+            _player.Update(gameTime);
             this._lights[0].Position = new Vector3(InputManager.Mouse().X, InputManager.Mouse().Y, this._lights[0].Position.Z);
 
             if(InputManager.isKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
             {
                 SpotLight light = (SpotLight)this._lights[0];
                 light.SpotRotation += 0.1f;
-                Events.fire("LightManager::LightRoration", light.getID());
             }
 
             if (InputManager.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.R))
@@ -61,7 +61,7 @@ namespace NNS.Lib.Entities.Screens
                 _lights.Add(new PointLight()
                 {
                     IsEnabled = true,
-                    Color = new Vector4(0f, (float)rnd.NextDouble(), (float)rnd.NextDouble(), 1.0f),
+                    Color = new Vector4( (float)rnd.NextDouble(), (float)rnd.NextDouble(), (float)rnd.NextDouble(), 1.0f),
                     Power = (float)rnd.Next(1, 10) * .1f,
                     LightDecay = rnd.Next(100, 400),
                     Position = new Vector3(
@@ -76,8 +76,8 @@ namespace NNS.Lib.Entities.Screens
         {
             this._lightManager.SpriteBatchBegin(spriteBatch);
 
-            spriteBatch.Draw(this._text, new Vector2(50, 50), Color.White);
-
+            _player.Draw(spriteBatch, gameTime);
+           // spriteBatch.Draw(this._text, new Vector2(0, 0), Color.White);
             spriteBatch.End();
 
             this._lightManager.DrawLights(spriteBatch, this._lights);

@@ -9,8 +9,8 @@ namespace NNS.Lib.Entities.Sprites
 {
 	public class AnimatedSprite : Common.UniqueID
 	{
-		private Dictionary<String,Animation> _animations;
-		private Animation _currentAnimation;
+		protected Dictionary<String,Animation> _animations;
+		protected Animation _currentAnimation;
 
         #region Properties
 
@@ -94,7 +94,7 @@ namespace NNS.Lib.Entities.Sprites
 
         #endregion
 
-         #region Constructors
+        #region Constructors
 
         public AnimatedSprite() 
             : base()
@@ -114,8 +114,6 @@ namespace NNS.Lib.Entities.Sprites
 
         #endregion
 
-	
-
 
         #region Class Methods
         public virtual void Initialize()
@@ -127,6 +125,8 @@ namespace NNS.Lib.Entities.Sprites
         public void addAnimation(String key, Animation animation)
         {
             this._animations.Add(key, animation);
+            if (_currentAnimation == null)
+                _currentAnimation = animation;
         }
 
         public void switchAnimation(String animation)
@@ -137,7 +137,7 @@ namespace NNS.Lib.Entities.Sprites
         #endregion
 
         #region Update & Draw
-        public void Update (GameTime gameTime)
+        public virtual void Update (GameTime gameTime)
 		{
 			if(_animations.Count > 0){
 
@@ -152,7 +152,7 @@ namespace NNS.Lib.Entities.Sprites
 			}
 		}
 
-		public void Draw (SpriteBatch spriteBatch, GameTime gameTime)
+        public virtual void Draw(SpriteBatch spriteBatch, GameTime gameTime)
 		{
 			if(_animations.Count > 0){
 				spriteBatch.Draw( this._currentAnimation.Texture,

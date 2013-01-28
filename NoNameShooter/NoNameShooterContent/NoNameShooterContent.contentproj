@@ -34,13 +34,6 @@
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Textures\fireball.png">
-      <Name>fireball</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Effects\DeferredCombined.fx">
       <Name>DeferredCombined</Name>
       <Importer>EffectImporter</Importer>
@@ -53,15 +46,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Textures\Lighthouse.jpg">
-      <Name>Lighthouse</Name>
+    <Compile Include="Textures\normal.png">
+      <Name>normal</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Textures\Chrysanthemum.jpg">
-      <Name>Chrysanthemum</Name>
+    <Compile Include="Textures\zombi.png">
+      <Name>zombi</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\player.png">
+      <Name>player</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

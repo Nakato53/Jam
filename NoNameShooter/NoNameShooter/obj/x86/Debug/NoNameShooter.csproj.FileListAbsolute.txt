@@ -14,8 +14,8 @@ D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\ResolveAssemblyR
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.exe
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\obj\x86\Debug\NoNameShooter.pdb
-D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\fireball.xnb
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Effects\DeferredCombined.xnb
 D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Effects\MultiTarget.xnb
-D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\Lighthouse.xnb
-D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\Chrysanthemum.xnb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\zombi.xnb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\normal.xnb
+D:\Projets\C#\XNA\Jam\NoNameShooter\NoNameShooter\bin\x86\Debug\Content\Textures\player.xnb
